@@ -30,6 +30,9 @@ const app = http.createServer((req, res) => {
 
   // 시스템은 클라이언트로부터 요청을 받았음을 기록하고
   console.log("Message received!");
+  console.log(req.method); //get/post
+  console.log(req.url);    
+  console.log(req.headers);
 
   // 콜백 함수의 response 매개변수를 사용해 처음 요청을 받은 사용자에게 다시 내용을보낸다.
   // 첫 번째 줄에서는 writeHead 메소드를 사용해 응답의 HTTP 헤더의 기본 속성을 정의한다.
