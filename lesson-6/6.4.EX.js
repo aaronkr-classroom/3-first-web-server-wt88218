@@ -14,7 +14,7 @@ http
     let url = req.url; // url 변수에 요청 URL 저장
 
     // URL에 파일 확장자가 있는지 확인
-    if (url.indexOf(".html") !== -1) {
+    if (url.indexOf(".html") !== -1) { //
       // 요청 콘텐츠 유형의 지정
       // 파일을 읽어들이기 위한 readFile의 호출
     } else if (url.indexOf(".js") !== -1) {
